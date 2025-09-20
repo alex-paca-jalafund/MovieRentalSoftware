@@ -1,0 +1,43 @@
+[ {
+  "id" : "totals-1",
+  "totalAmount" : 30.0,
+  "totalPoints" : 4,
+  "rental" : {
+    "movies" : [ {
+      "type" : "New",
+      "title" : "Inception",
+      "id" : "1"
+    }, {
+      "type" : "New",
+      "title" : "Interestelar",
+      "id" : "2"
+    } ],
+    "customer" : {
+      "userName" : "Alex",
+      "id" : "123",
+      "frequentRenterPoints" : 4
+    },
+    "daysRent" : 5
+  }
+}, {
+  "id" : "totals-1",
+  "totalAmount" : 30.0,
+  "totalPoints" : 4,
+  "rental" : {
+    "movies" : [ {
+      "type" : "New",
+      "title" : "Inception",
+      "id" : "1"
+    }, {
+      "type" : "New",
+      "title" : "Interestelar",
+      "id" : "2"
+    } ],
+    "customer" : {
+      "userName" : "Alex",
+      "id" : "123",
+      "frequentRenterPoints" : 4
+    },
+    "daysRent" : 5
+  }
+} ]
