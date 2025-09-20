@@ -10,6 +10,7 @@ public class Rental {
     private Customer customer;
     private int daysRent;
 
+    public Rental(){}
     public Rental(Queue<Movie> movies, Customer customer, int days) throws RentalNegativeDayException {
         if (movies == null || movies.isEmpty()) {
             throw new IllegalArgumentException("Movies queue cannot be null or empty");
