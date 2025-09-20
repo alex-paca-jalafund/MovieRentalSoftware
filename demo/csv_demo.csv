@@ -1,0 +1,4 @@
+customerId,customerName,daysRent,id,movies,totalAmount,totalPoints
+totals-1,,0,,,0.0,0
+123,Alex,5,totals-1,Inception|Interestelar,30.0,4
+123,Alex,5,totals-1,Inception|Interestelar,30.0,4
