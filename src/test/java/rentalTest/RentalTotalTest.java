@@ -9,7 +9,7 @@ import org.movie.errorHanlding.priceException.PriceException;
 import org.movie.movieTypes.Movie;
 import org.movie.rental.Customer;
 import org.movie.rental.Rental;
-import org.movie.rental.RentalTotals;
+import org.movie.rental.RentalTotal;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -17,7 +17,7 @@ import java.util.Queue;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class RentalTotalsTest {
+class RentalTotalTest {
 
     @Test
     void shouldCalculateTotalsCorrectly() throws PriceException, RenterPointsException, RentalNegativeDayException {
@@ -37,7 +37,7 @@ class RentalTotalsTest {
 
         Rental rental = new Rental(movies, customer, 5);
 
-        RentalTotals totals = new RentalTotals("1",rental);
+        RentalTotal totals = new RentalTotal("1",rental);
         totals.calculateTotals();
 
         assertEquals(25.0, totals.getTotalAmount());
@@ -46,7 +46,7 @@ class RentalTotalsTest {
 
     @Test
     void shouldThrowExceptionWhenRentalIsNull() {
-        assertThrows(IllegalArgumentException.class, () -> new RentalTotals("1",null));
+        assertThrows(IllegalArgumentException.class, () -> new RentalTotal("1",null));
     }
 
     @Test
@@ -63,7 +63,7 @@ class RentalTotalsTest {
         movies.add(movie);
         Rental rental = new Rental(movies, customer, 3);
 
-        RentalTotals totals = new RentalTotals("1",rental);
+        RentalTotal totals = new RentalTotal("1",rental);
         totals.calculateTotals();
         assertEquals(0.0, totals.getTotalAmount());
         assertEquals(1, totals.getTotalPoints());
@@ -81,7 +81,7 @@ class RentalTotalsTest {
         movies.add(movie);
         Rental rental = new Rental(movies, customer, 3);
 
-        RentalTotals totals = new RentalTotals("1",rental);
+        RentalTotal totals = new RentalTotal("1",rental);
         totals.calculateTotals();
 
         assertEquals(12.0, totals.getTotalAmount());
