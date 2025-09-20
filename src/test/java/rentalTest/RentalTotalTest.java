@@ -37,7 +37,8 @@ class RentalTotalsTest {
 
         Rental rental = new Rental(movies, customer, 5);
 
-        RentalTotals totals = new RentalTotals(rental);
+        RentalTotals totals = new RentalTotals("1",rental);
+        totals.calculateTotals();
 
         assertEquals(25.0, totals.getTotalAmount());
         assertEquals(3, totals.getTotalPoints());
@@ -45,7 +46,7 @@ class RentalTotalsTest {
 
     @Test
     void shouldThrowExceptionWhenRentalIsNull() {
-        assertThrows(IllegalArgumentException.class, () -> new RentalTotals(null));
+        assertThrows(IllegalArgumentException.class, () -> new RentalTotals("1",null));
     }
 
     @Test
@@ -62,8 +63,8 @@ class RentalTotalsTest {
         movies.add(movie);
         Rental rental = new Rental(movies, customer, 3);
 
-        RentalTotals totals = new RentalTotals(rental);
-
+        RentalTotals totals = new RentalTotals("1",rental);
+        totals.calculateTotals();
         assertEquals(0.0, totals.getTotalAmount());
         assertEquals(1, totals.getTotalPoints());
     }
@@ -80,7 +81,8 @@ class RentalTotalsTest {
         movies.add(movie);
         Rental rental = new Rental(movies, customer, 3);
 
-        RentalTotals totals = new RentalTotals(rental);
+        RentalTotals totals = new RentalTotals("1",rental);
+        totals.calculateTotals();
 
         assertEquals(12.0, totals.getTotalAmount());
         assertEquals(0, totals.getTotalPoints());
