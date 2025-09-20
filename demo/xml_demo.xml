@@ -1,0 +1,48 @@
+<ArrayList>
+  <item>
+    <id>totals-1</id>
+    <totalAmount>30.0</totalAmount>
+    <totalPoints>4</totalPoints>
+    <rental>
+      <movies>
+        <movies type="New">
+          <title>Inception</title>
+          <id>1</id>
+        </movies>
+        <movies type="New">
+          <title>Interestelar</title>
+          <id>2</id>
+        </movies>
+      </movies>
+      <customer>
+        <userName>Alex</userName>
+        <id>123</id>
+        <frequentRenterPoints>4</frequentRenterPoints>
+      </customer>
+      <daysRent>5</daysRent>
+    </rental>
+  </item>
+  <item>
+    <id>totals-1</id>
+    <totalAmount>30.0</totalAmount>
+    <totalPoints>4</totalPoints>
+    <rental>
+      <movies>
+        <movies type="New">
+          <title>Inception</title>
+          <id>1</id>
+        </movies>
+        <movies type="New">
+          <title>Interestelar</title>
+          <id>2</id>
+        </movies>
+      </movies>
+      <customer>
+        <userName>Alex</userName>
+        <id>123</id>
+        <frequentRenterPoints>4</frequentRenterPoints>
+      </customer>
+      <daysRent>5</daysRent>
+    </rental>
+  </item>
+</ArrayList>
